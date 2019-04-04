@@ -1,5 +1,5 @@
-<?
+<?php
 
-echo 'You are on: '.$_SERVER['PHP_SELF'];
+  echo 'You are on: '.$_SERVER['PHP_SELF'];
 
 ?>

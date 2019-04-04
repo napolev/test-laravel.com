@@ -1,4 +1,7 @@
-RewriteEngine On
-RewriteBase /laravel/
+<IfModule mod_rewrite.c>
+  RewriteEngine On
 
-RewriteRule ^api/(.*)$ /api/$1 [L]
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ /laravel/public/$1 [L]
+</IfModule>
